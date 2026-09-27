@@ -6,7 +6,7 @@
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.micro"
+  default     = "t3.micro"
 }
 
 # Define an input variable for the EC2 instance AMI ID
@@ -17,7 +17,7 @@ variable "ami_id" {
 
 # Configure the AWS provider using the input variables
 provider "aws" {
-  region      = "us-east-1"
+  region      = "ap-south-1"
 }
 
 # Create an EC2 instance using the input variables
